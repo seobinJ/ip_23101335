@@ -1,0 +1,56 @@
+<!--
+    연습문제 페이지 116 문제 10번 11번  페이지 119 종합문제 페이지 120 종합예제
+    파일명 : code_116_1.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>글 작성하기</h1>
+        <table>
+            <tr>
+                <th label for="user">작성자</label></th>
+                <td><input id ="user" type="text" name="user"></td>
+            </tr>
+            <tr>
+                <th label for="username">아이디</label></th>
+                <td><input id ="username" type="text" name="username"></td>
+            </tr>
+            <tr>
+                <th label for="mail">이메일</label></th>
+                <td><input type="text" id="email_local" name="email_local"> @ 
+                    <input type="text" id="email_domain" name="email_domain"></td>
+            </tr>
+            <tr>
+                <th label for="phone">휴대폰</label></th>
+                <td><select id="phone_prefix" name="phone_prefix">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                    <option value="017">017</option>
+                    <option value="018">018</option>
+                    <option value="019">019</option>
+                  </select> -
+                  <input type="text" id="phone_mid" name="phone_mid" maxlength="4"> -
+                  <input type="text" id="phone_last" name="phone_last" maxlength="4"></td>
+            </tr>
+            <tr>
+                <th label for="title">글 제목</label></th>
+                <td><input id="title" type="text" name="title"></td>
+            </tr>
+            <tr>
+                <th label for="content">내용</label></th>
+                <td><textarea id="content" name="content" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="제출"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
